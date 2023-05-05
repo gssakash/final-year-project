@@ -53,7 +53,7 @@ function ImageUploader() {
       {image && (
         <div>
           <h2>Preview:</h2>
-          <img src={image} alt="Uploaded image" width="200" />
+          <img src={image} alt="Uploaded file" width="200" />
         </div>
       )}
       <button id="selector-btn" onClick={triggerFileInput}>Select Image</button>

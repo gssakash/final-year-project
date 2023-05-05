@@ -5,6 +5,7 @@ import './ImageUploader.css';
 function ImageUploader() {
   const [image, setImage] = useState(null);
   const [file, setFile] = useState(null);
+  const [pred,setPred] = useState(null);
   const fileInputRef = useRef(); // Add this line to create a reference to the file input
 
   function handleImageChange(event) {
@@ -31,6 +32,7 @@ function ImageUploader() {
           );
       console.log('API Response: ', response.data)
       console.log(response.data.prediction)
+      setPred(response.data.prediction)
     }
   }
 
@@ -56,6 +58,7 @@ function ImageUploader() {
       )}
       <button id="selector-btn" onClick={triggerFileInput}>Select Image</button>
       <button id="uploader-btn" onClick={handleImageSubmit}>Upload Image</button>
+      <h2>{pred}</h2>
     </div>
   );
 }

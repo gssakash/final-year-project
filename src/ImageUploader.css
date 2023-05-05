@@ -1,4 +1,4 @@
-input[type=file]::file-selector-button {
+#selector-btn {
     margin-right: 20px;
     border: none;
     background: #084cdf;
@@ -9,7 +9,23 @@ input[type=file]::file-selector-button {
     transition: background .2s ease-in-out;
   }
   
-  input[type=file]::file-selector-button:hover {
+#selector-btn {
     background: #0d45a5;
+  }
+  
+
+  #uploader-btn {
+    margin-right: 20px;
+    border: none;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+#uploader-btn {
+    background: black;
   }
   

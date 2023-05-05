@@ -23,8 +23,12 @@ function ImageUploader() {
     if (file) {
       const fileName = file.name;
       console.log('File name: ', fileName);
-      let url = `http://127.0.0.1:8000/predict/{fileName}`
-      const response = await axios.get(url);
+      let url = `http://localhost:8000/predict/${fileName}`
+      const response = await axios.get(url,
+        {
+          'Access-Control-Allow-Origin':'*',
+          }
+          );
       console.log('API Response: ', response.data)
       console.log(response.data.prediction)
     }

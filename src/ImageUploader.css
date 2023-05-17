@@ -38,4 +38,14 @@
 #uploader-btn {
     background: black;
   }
-  
+
+  #downloader-btn {
+    background: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    border: none;
+  }

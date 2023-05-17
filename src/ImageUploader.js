@@ -111,12 +111,13 @@ function ImageUploader() {
         </div>
       )}
       <button id="selector-btn" onClick={triggerFileInput}>Select Image</button>
-      <button id="uploader-btn" onClick={handleImageSubmit}>Upload Image</button>
-      <PDFDownloadLink document={<MyDocument data={pred} image={image} />} fileName="report.pdf">
+      <button id="uploader-btn" onClick={handleImageSubmit}>Predict</button>
+      <button id="downloader-btn"><PDFDownloadLink document={<MyDocument data={pred} image={image} />} fileName="report.pdf">
         {({ blob, url, loading, error }) =>
-          loading ? "Loading document..." : "Download Pdf"
+          loading ? "Download Pdf" : "Download Pdf"
         }
       </PDFDownloadLink>
+      </button>
  
       <h2>{pred}</h2>
     </div>

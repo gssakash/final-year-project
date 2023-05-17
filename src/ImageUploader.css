@@ -9,6 +9,16 @@
     transition: background .2s ease-in-out;
   }
   
+.prediction-text {
+  border: 3px solid black;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top:40px;
+
+}
+
 #selector-btn {
     background: #0d45a5;
   }
